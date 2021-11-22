@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <!--Znacznik <head> jest strukturą strony i znajdują się w nim informacje szczególne, takie jak: W jakim języku pisana jest strona, mety mówiące o właścicielu strony oraz tytuł samej strony-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauka HTML</title>
+</head>
+<!--<body> jest najważniejszą funkcją, ponieważ to w nim znajduje się struktura strony!-->
+<body>
+    <h1>Witaj na Stronie</h1>
+    <hr>
+    <br>
+    <p><big>To</big> <small>jest</small> <i>pierwszy</i> <b>paragraf</b></p>
+    <!--To jest komentarz, nie niszczy, ani nie wplywa na strukture strony!-->
+    <p><sub>A</sub> <sup>to</sup> jest drugi <b><i>paragraf</i></b></p>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <!--<header> to nagłówek, który jest na samej górze strony, czyli jeśli coś się w nim znajdzie, będzie wyświetlane nad wszystkim;
+        <main> to nagłówek, którego wypełnienie jest wyświetlane po środku;
+        <footer> to nagłowek, którego zawartość jest na samym dole;-->
+    <header>
+        <nav>
+            <p>Wiadomosc, ta wyswietla sie na samej gorze strony</p>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <p>Po srodku strony</p>
+            </section>
+            <section>
+                <aside>
+                    <p>Po srodku strony</p>
+                </aside>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Na dole strony</p>
+    </footer>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <a href="https://youtube.com" target="_blank"><b>Link przenosi na youtube</b></a>
+    <br>
+    <a href="index2.html">Przejdź do podstrony</a>
+    <br>
+    <br>
+    <img src="https://i.pinimg.com/736x/1b/ef/b5/1befb5723f54627768e1d77642ca4d45.jpg" alt="My cute cat" width="200px" height="200px">
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EQcQfaqMoiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <!--<ul> to lista punktowa, a <ol> to lista numerowana lub cyfrowana-->
+    <ul type="circle">
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Bananas</li>
+    </ul>
+    <br>
+    <ol type="i">
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Bananas</li>
+    </ol>
+    <br>
+    <dl>
+        <dt>Apples</dt>
+        <dd>- To jest czerwone</dd>
+        <dt>Oranges</dt>
+        <dd>- To jest pomarańczowe</dd>
+    </dl>
+    <br>
+    <br>
+    <!--<caption> to tytuł całej tabeli, <th> to tytuł kolumn, a <td> to zawartość kolumn.-->
+    <table>
+        <thead>
+            <caption><h3>Nazwa Tabeli</h3></caption>
+            <tr>
+                <th>Tytuł 1</th><th>Tytuł 2</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <!--|colspan| łączy 1 linijke, z nastepną, a |rowspan| łączy kolumne.-->
+            <td colspan="2">1 Kolumna</td><td>2 Kolumna</td>
+        </tr>
+        <tr>
+            <td>3 Kolumna</td><td>4 Kolumna</td>
+        </tr>
+        <tr>
+            <td>5 Kolumna</td><td>6 Kolumna</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <!--<span> sluży do ułożenia w jednej linii całej swojej zawartości(Najlepiej używać w
+    <div> oraz <header>);-->
+    <span>span1</span>
+    <span>span2</span>
+    <hr>
+    <div>div1</div>
+    <div>div2</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <form>
+        <input type="text" placeholder="Enter your username">
+        <br>
+        <input type="password">
+        <br>
+        <textarea rows="10" cols="30">
+        </textarea>
+        <br>
+        <input type="date">
+        <input type="checkbox">
+        <br>
+        <input name="btn" type="radio">
+        <input name="btn" type="radio">
+    </form>
+</body>
+</html>
